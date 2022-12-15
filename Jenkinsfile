@@ -1,7 +1,9 @@
 node {
     stage('Preparation') {
-      def var = ['a' : "test", 'b' : "test2"]
+      def x = 3
+      def var = [x : 4, 'b' : "test2"]
       var = var.getClass()
-      echo "$var"
+      echo "$x"
+      echo "$var[x]"
     }
 }
